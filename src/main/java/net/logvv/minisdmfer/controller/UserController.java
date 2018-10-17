@@ -1,6 +1,6 @@
 package net.logvv.minisdmfer.controller;
 
-import net.logvv.minisdmf.common.model.GeneralResult;
+import net.logvv.minisdmfer.common.model.GeneralResult;
 import net.logvv.minisdmfer.model.UserToken;
 import net.logvv.minisdmfer.service.IUserService;
 import org.slf4j.Logger;

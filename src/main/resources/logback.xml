@@ -6,7 +6,7 @@
             <pattern>[%d{yyyy-MM-dd HH:mm:ss}] [%thread] %-5level %logger{32} [%L] - %msg%n</pattern>
         </encoder>
     </appender>
-    <appender name="minisdmf" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <appender name="minisdmfer" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <Encoding>UTF-8</Encoding>
         <File>${LOG_HOME}/minisdmf.log</File>
         <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
@@ -39,7 +39,7 @@
     </appender>
 
     <logger name="net.logvv" level="info" additivity="false">
-        <appender-ref ref="minisdmf" />
+        <appender-ref ref="minisdmfer" />
     </logger>
 
 
