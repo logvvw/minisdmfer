@@ -6,12 +6,12 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!-- 注解自动扫描 -->
-    <context:component-scan base-package="net.logvv.minisdmf" />
+    <context:component-scan base-package="net.logvv.minisdmfer" />
 
-    <bean id="springContextHolder" class="net.logvv.minisdmf.common.spring.SpringContextHolder" lazy-init="false"/>
+    <bean id="springContextHolder" class="net.logvv.minisdmfer.common.spring.SpringContextHolder" lazy-init="false"/>
 
     <!-- 将多个配置文件读取到容器中，交给Spring管理 -->
-    <bean id="propertyConfigurer" class="net.logvv.minisdmf.common.spring.DecryptPropertyPlaceholderConfigurer">
+    <bean id="propertyConfigurer" class="net.logvv.minisdmfer.common.spring.DecryptPropertyPlaceholderConfigurer">
         <property name="locations">
             <list>
                 <!-- 使用file的方式引入，这样可以将配置和代码分离 -->
