@@ -1,9 +1,9 @@
 package net.logvv.minisdmfer.service.impl;
 
-import com.alibaba.dubbo.config.annotation.Reference;
 import net.logvv.minisdmfer.model.UserToken;
 import net.logvv.minisdmfer.service.IUserService;
 import org.joda.time.DateTime;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 
@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserServiceImpl implements IUserService {
 
-    @Reference
+    @Autowired
     private IUniqueIDService uniqueIDService;
 
     @Override
