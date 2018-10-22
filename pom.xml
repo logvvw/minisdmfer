@@ -280,7 +280,7 @@
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
-                <filtering>true</filtering><!-- 处理文件时,需要对文件进行变量替换 -->
+                <filtering>true</filtering>
                 <excludes>
                     <exclude>dev/*</exclude>
                     <exclude>test/*</exclude>
@@ -295,7 +295,6 @@
                     <include>application.properties</include>
                 </includes>
             </resource>
-            <!-- 动态替换 -->
             <resource>
                 <directory>src/main/resources/${profile.active}</directory>
             </resource>
