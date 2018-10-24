@@ -17,7 +17,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <springframework.version>5.0.10.RELEASE</springframework.version>
         <ch.qos.logback.version>1.2.3</ch.qos.logback.version>
-        <jackson.version>2.4.0</jackson.version>
         <dubbo-spring-boot>1.0.0</dubbo-spring-boot>
         <release>release</release>
     </properties>
@@ -309,24 +308,6 @@
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-antrun-plugin</artifactId>
-                <version>1.8</version>
-                <executions>
-                    <execution>
-                        <phase>clean</phase>
-                        <configuration>
-                            <tasks>
-                                <delete dir="release" />
-                            </tasks>
-                        </configuration>
-                        <goals>
-                            <goal>run</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
