@@ -5,7 +5,7 @@ import net.logvv.minisdmfer.service.IUserService;
 import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
+import net.logvv.minisdmf.service.IUniqueIDService;
 
 /**
  * Author : logvvw
